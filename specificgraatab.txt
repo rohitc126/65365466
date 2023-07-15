@@ -1,0 +1,183 @@
+       <div class="form-group row">
+            <div class="table-responsive">
+                <table class="table table-bordered" style="font-size: 10px; padding: 0px; margin: 0px;width:955px " id="tblList">
+                    <thead>
+                        <tr>
+                            <th style="width: 5px;text-align: center;">SR No:</th>
+                            <th style="width: 414px;text-align: center;">Determination</th>
+                            <th style="width: 120px;text-align: center;">Formula</th>
+                            <th style="width: 150px; text-align: center;">Sample I</th>
+                            <th style="width: 150px;text-align:center;">Sample II</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyList">
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(1) </span>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination, new { @class = "form-control numeric", @id = "txtDetermination", @autocomplete = "off", placeholder = "wt.of sample as received /taken for test after washing , gms" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula, new { @class = "form-control numeric", @id = "txtFormula", @autocomplete = "off", })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Sample_Wt, new { @class = "form-control numeric", @id = "txtSample", @autocomplete = "off" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Sample_Wt, new { @class = "form-control numeric", @id = "txtSamp", @autocomplete = "off" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(2) </span>
+                            </td>
+
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination1, new { @class = "form-control numeric", @id = "txtDetermination1", @autocomplete = "off", placeholder = "wt.of wire basket + Aggregate in water" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula1, new { @class = "form-control numeric", @id = "txtFormula1", @autocomplete = "off", placeholder = "A1", value = "" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Wb_Agg_Wt, new { @class = "form-control numeric", @id = "txtSample1", @autocomplete = "off" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Wb_Agg_Wt, new { @class = "form-control numeric", @id = "txtSamp1", @autocomplete = "off" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(3) </span>
+                            </td>
+
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination2, new { @class = "form-control numeric", @id = "txtDetermination2", @autocomplete = "off", placeholder = "wt.of wire basket in water" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula2, new { @class = "form-control numeric", @id = "txtFormula2", @autocomplete = "off", placeholder = "A2" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Wb_Wt, new { @class = "form-control numeric", @id = "txtSample2", @autocomplete = "off" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Wb_Wt, new { @class = "form-control numeric", @id = "txtSamp2", @autocomplete = "off" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(4) </span>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination3, new { @class = "form-control numeric", @id = "txtDetermination3", @autocomplete = "off", placeholder = "wt.of saturated aggregate in water(A)" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula3, new { @class = "form-control numeric", @id = "txtFormula3", @autocomplete = "off", placeholder = "A1-A2" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.SA_WT, new { @class = "form-control numeric", @id = "txtSample3", @autocomplete = "off" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.SA_WT, new { @class = "form-control numeric", @id = "txtSamp3", @autocomplete = "off" })
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(5) </span>
+                            </td>
+
+
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination4, new { @class = "form-control numeric", @id = "txtDetermination4", @autocomplete = "off", placeholder = "wt.of saturated Surface dry aggregate in Air(B)" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula4, new { @class = "form-control numeric", @id = "txtFormula4", @autocomplete = "off", placeholder = "B" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Dry_Agg_Wt, new { @class = "form-control numeric", @id = "txtSample4", @autocomplete = "off" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Dry_Agg_Wt, new { @class = "form-control numeric", @id = "txtSamp4", @autocomplete = "off" })
+                            </td>
+
+
+
+                        </tr>
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(6) </span>
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination5, new { @class = "form-control numeric", @id = "txtDetermination5", @autocomplete = "off", placeholder = "wt.of oven-dried aggregate in Air" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula5, new { @class = "form-control numeric", @id = "txtFormula5", @autocomplete = "off", placeholder = "C" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Oven_Dry_Agg_Wt, new { @class = "form-control numeric", @id = "txtSample5", @autocomplete = "off" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.Oven_Dry_Agg_Wt, new { @class = "form-control numeric", @id = "txtSamp5", @autocomplete = "off" })
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(7) </span>
+                            </td>
+
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination6, new { @class = "form-control numeric", @id = "txtDetermination6", @autocomplete = "off", placeholder = "Specific Gravity" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula6, new { @class = "form-control numeric", @id = "txtFormula6", @autocomplete = "off", placeholder = "C/(B-A)" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.SP_SG, new { @class = "form-control numeric", @id = "txtSample6", @autocomplete = "off", @ReadOnly = "True" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.SP_SG, new { @class = "form-control numeric", @id = "txtSamp6", @autocomplete = "off", @ReadOnly = "True" })
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(8) </span>
+                            </td>
+
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination7, new { @class = "form-control numeric", @id = "txtDetermination7", @autocomplete = "off", placeholder = "Apparent Specific Gravity" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula7, new { @class = "form-control numeric", @id = "txtFormula7", @autocomplete = "off", placeholder = "C(C-A)" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.APP_SG, new { @class = "form-control numeric", @id = "txtSample7", @autocomplete = "off", @ReadOnly = "True" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.APP_SG, new { @class = "form-control numeric", @id = "txtSamp7", @autocomplete = "off", @ReadOnly = "True" })
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-title="SR. No." style="text-align: center; padding-top: 17px;">
+                                <span id="spnSrNo_"> @(9) </span>
+                            </td>
+
+                            <td>
+                                @Html.TextBoxFor(model => model.txtDetermination8, new { @class = "form-control numeric", @id = "txtDetermination8", @autocomplete = "off", placeholder = "Water Abosrption in %" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.txtFormula8, new { @class = "form-control numeric", @id = "txtFormula8", @autocomplete = "off", placeholder = "(B-C)*100/C" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.WA_AB, new { @class = "form-control numeric", @id = "txtSample8", @autocomplete = "off", @ReadOnly = "True" })
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(model => model.WA_AB, new { @class = "form-control numeric", @id = "txtSamp8", @autocomplete = "off", @ReadOnly = "True" })
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
